@@ -10,6 +10,7 @@
   </Folder>
   <Folder Name="/docs/methods/">
     <File Path="docs/methods/command-placement-issue.md" />
+    <File Path="docs/methods/csharpier-dotnet-root-issue.md" />
   </Folder>
   <Folder Name="/others/">
     <Project Path="src/Rabbit.ConsoleExample/Rabbit.ConsoleExample.csproj" Id="9160dc3f-2ad0-4946-ab90-cf4272f2b29d" />

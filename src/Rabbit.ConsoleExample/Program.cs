@@ -1,3 +1,3 @@
 using Rabbit.ConsoleExample;
 
-await DemoAxaml.Exec();
+await DemoCSharpEnv.Exec();

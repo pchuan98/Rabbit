@@ -1,15 +1,18 @@
+using System.Diagnostics;
 using Microsoft.VisualStudio.Extensibility;
-using Microsoft.VisualStudio.ProjectSystem.Query.Framework.Actions;
-using Debug = System.Diagnostics.Debug;
+using Microsoft.VisualStudio.Extensibility.Shell;
 
 namespace Rabbit;
 
 internal class LogService(VisualStudioExtensibility extensibility)
 {
-    private const string ErrorTitle = "Rabbit Error";
+    private const string Header = "Rabbit";
 
-    public async Task Error(string msg)
+    public async Task DebugAsync(string msg, CancellationToken? token)
     {
-        Debug.WriteLine("hello");
+        token ??= CancellationToken.None;
+
+        await extensibility.Shell().ShowPromptAsync(msg, PromptOptions.OK, (CancellationToken)token);
+        Debug.WriteLine(msg);
     }
 }

@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace Rabbit.Formator.Models;
+namespace Rabbit.Formator.Xaml;
 
 /// <summary>
 /// XamlStyler 命令行工具的配置选项模型
@@ -48,8 +48,9 @@ public class XamlStylerOptions
     /// <summary>
     /// 将格式化结果输出到 stdout 而不是修改文件。在此模式下，日志打印到 stderr。必须指定一个文件。不能与 --passive 结合使用
     /// 对应参数: --write-to-stdout
+    /// 注意: 此属性固定为 true，用于格式化服务获取输出结果
     /// </summary>
-    public bool? WriteToStdout { get; set; }
+    public bool? WriteToStdout { get; } = true;
 
     /// <summary>
     /// 日志级别，按详细程度递增顺序: None, Minimal, Default, Verbose, Debug

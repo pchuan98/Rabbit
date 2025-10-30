@@ -1,3 +1,4 @@
 {
-  "RabbitCommandString.Format": "Format Codexx"
+  "RabbitCommandString.Format": "Format",
+  "RabbitCommandString.FormatDiagnostic": "Format (Diagnostic)"
 }
