@@ -1,0 +1,13 @@
+{
+  "Rabbit.LearnExtension.SimpleCommand": "Sample Command",
+
+  "Rabbit.LearnExtension.SimpleCommand.Tooltips": "Sample Command Tooltips",
+  "Rabbit.LearnExtension.DialogCommand": "Dialog Command",
+
+  "Rabbit.LearnExtension.ShowSimpleToolCommand": "Show Tool Window",
+
+  "Rabbit.LearnExtension.CommentCommand": "Comment",
+
+  "Rabbit.Providers.TestCommand.DisplayName": "Test Document Subscription",
+  "Rabbit.Providers.SimpleTestCommand.DisplayName": "Simple Document Test"
+}

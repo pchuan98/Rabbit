@@ -1,0 +1,26 @@
+<Solution>
+  <Folder Name="/.claude/" />
+  <Folder Name="/.claude/agents/" />
+  <Folder Name="/.claude/commands/">
+    <File Path=".claude/commands/learn.md" />
+  </Folder>
+  <Folder Name="/docs/">
+    <File Path="docs/llm.md" />
+    <File Path="docs/vsshlids.h" />
+  </Folder>
+  <Folder Name="/docs/methods/">
+    <File Path="docs/methods/command-placement-issue.md" />
+  </Folder>
+  <Folder Name="/others/">
+    <Project Path="src/Rabbit.ConsoleExample/Rabbit.ConsoleExample.csproj" Id="9160dc3f-2ad0-4946-ab90-cf4272f2b29d" />
+    <Project Path="src/Rabbit.LearnExtension/Rabbit.LearnExtension.csproj" Id="d8540bbb-19da-4e5c-b2d3-dcc7b6433380" />
+  </Folder>
+  <Folder Name="/_/">
+    <File Path=".editorconfig" />
+    <File Path="Directory.Build.props" />
+    <File Path="nuget.config" />
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="src/Rabbit/Rabbit.csproj" Id="33bf422f-d82c-4e02-9417-346ba3665815" />
+  <Project Path="src/RabbitContainer/RabbitContainer.csproj" Id="a7385444-91ed-4ec1-a293-06e868be4f8c" />
+</Solution>

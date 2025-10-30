@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <Extern href="stdidcmd.h"/>
+  <Extern href="vsshlids.h"/>
+  <Include href="KnownImageIds.vsct"/>
+  <Include href="VSGlobals.vsct"/>
+
+  <Commands package="RabbitContainer">
+    <Groups>
+      <!-- Slot group for editor context menu -->
+      <Group guid="RabbitContainer" id="EditorContextMenuGroup" priority="0x0000">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_CODEWIN"/>
+      </Group>
+
+      <!-- Slot group for file item context menu -->
+      <Group guid="RabbitContainer" id="FileItemContextMenuGroup" priority="0x0000">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_ITEMNODE"/>
+      </Group>
+
+      <!-- Slot group for folder context menu -->
+      <Group guid="RabbitContainer" id="FolderContextMenuGroup" priority="0x0000">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_FOLDERNODE"/>
+      </Group>
+
+      <!-- Slot group for project context menu -->
+      <Group guid="RabbitContainer" id="ProjectContextMenuGroup" priority="0x0000">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_PROJNODE"/>
+      </Group>
+
+      <!-- Slot group for solution context menu -->
+      <Group guid="RabbitContainer" id="SolutionContextMenuGroup" priority="0x0000">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_SOLNNODE"/>
+      </Group>
+    </Groups>
+
+    <!--This section defines the elements the user can interact with, like a menu command or a button
+        or combo box in a toolbar. -->
+    <Buttons>
+      <!-- Placeholder command for editor context menu (hidden) -->
+      <Button guid="RabbitContainer" id="TestEditorCommand" priority="0x0100" type="Button">
+        <Parent guid="RabbitContainer" id="EditorContextMenuGroup" />
+        <Icon guid="ImageCatalogGuid" id="StatusInformation" />
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <ButtonText>Placeholder Editor Slot</ButtonText>
+          <LocCanonicalName>.RabbitContainer.TestEditorCommand</LocCanonicalName>
+        </Strings>
+      </Button>
+
+      <!-- Placeholder command for file item context menu (hidden) -->
+      <Button guid="RabbitContainer" id="TestFileItemCommand" priority="0x0100" type="Button">
+        <Parent guid="RabbitContainer" id="FileItemContextMenuGroup" />
+        <Icon guid="ImageCatalogGuid" id="StatusInformation" />
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <ButtonText>Placeholder File Slot</ButtonText>
+          <LocCanonicalName>.RabbitContainer.TestFileItemCommand</LocCanonicalName>
+        </Strings>
+      </Button>
+
+      <!-- Placeholder command for folder context menu (hidden) -->
+      <Button guid="RabbitContainer" id="TestFolderCommand" priority="0x0100" type="Button">
+        <Parent guid="RabbitContainer" id="FolderContextMenuGroup" />
+        <Icon guid="ImageCatalogGuid" id="StatusInformation" />
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <ButtonText>Placeholder Folder Slot</ButtonText>
+          <LocCanonicalName>.RabbitContainer.TestFolderCommand</LocCanonicalName>
+        </Strings>
+      </Button>
+
+      <!-- Placeholder command for project context menu (hidden) -->
+      <Button guid="RabbitContainer" id="TestProjectCommand" priority="0x0100" type="Button">
+        <Parent guid="RabbitContainer" id="ProjectContextMenuGroup" />
+        <Icon guid="ImageCatalogGuid" id="StatusInformation" />
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <ButtonText>Placeholder Project Slot</ButtonText>
+          <LocCanonicalName>.RabbitContainer.TestProjectCommand</LocCanonicalName>
+        </Strings>
+      </Button>
+
+      <!-- Placeholder command for solution context menu (hidden) -->
+      <Button guid="RabbitContainer" id="TestSolutionCommand" priority="0x0100" type="Button">
+        <Parent guid="RabbitContainer" id="SolutionContextMenuGroup" />
+        <Icon guid="ImageCatalogGuid" id="StatusInformation" />
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <ButtonText>Placeholder Solution Slot</ButtonText>
+          <LocCanonicalName>.RabbitContainer.TestSolutionCommand</LocCanonicalName>
+        </Strings>
+      </Button>
+    </Buttons>
+  </Commands>
+
+  <Symbols>
+    <GuidSymbol name="RabbitContainer" value="{e85d182a-f11b-4b4f-8fdc-cdfafe7b0d25}">
+      <!-- Slot groups for external extension placement -->
+      <IDSymbol name="EditorContextMenuGroup" value="0x0001" />
+      <IDSymbol name="FileItemContextMenuGroup" value="0x0002" />
+      <IDSymbol name="FolderContextMenuGroup" value="0x0003" />
+      <IDSymbol name="ProjectContextMenuGroup" value="0x0004" />
+      <IDSymbol name="SolutionContextMenuGroup" value="0x0005" />
+
+      <!-- Test commands -->
+      <IDSymbol name="TestEditorCommand" value="0x0100" />
+      <IDSymbol name="TestFileItemCommand" value="0x0101" />
+      <IDSymbol name="TestFolderCommand" value="0x0102" />
+      <IDSymbol name="TestProjectCommand" value="0x0103" />
+      <IDSymbol name="TestSolutionCommand" value="0x0104" />
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>
